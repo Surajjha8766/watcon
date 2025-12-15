@@ -395,7 +395,7 @@ body {
   width: 100%;
   height: auto;
   object-fit: cover;
-
+}
 /* TEXT + IMAGE SECTIONS */
 .text-image-section, .client-section {
   padding: 80px 0;
