@@ -1,0 +1,107 @@
+<!-- Updated products.html with futuristic UI: gradients, neon shadows, animations -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Noble Nautica</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+<header class="navbar">
+  <div class="container nav-content">
+    <div class="logo">
+      <!-- <img src="logo.svg" alt="Logo"> -->
+      <span>Noble Nautica</span>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+    <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+  </div>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero1">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>Our Products</h1>
+   
+    <!-- <button class="hero-btn">Explore Our Product</button> -->
+  </div>
+</section>
+
+    <!-- All Products -->
+    <section class="products-section">
+        <div class="container">
+            <div class="product-categories">
+                <button class="category-btn active" onclick="showAllProducts()">All Products</button>
+                <button class="category-btn" onclick="filterProducts('filtration')">Filtration Systems</button>
+                <button class="category-btn" onclick="filterProducts('pumps')">Pumps</button>
+                <button class="category-btn" onclick="filterProducts('heaters')">Heaters</button>
+                <button class="category-btn" onclick="filterProducts('cleaning')">Cleaners</button>
+                <button class="category-btn" onclick="filterProducts('chemicals')">Chemicals</button>
+                <button class="category-btn" onclick="filterProducts('accessories')">Accessories</button>
+            </div>
+            
+            <div class="product-grid" id="all-products">
+                <!-- Products loaded by JavaScript -->
+            </div>
+            
+            <!-- Modal for Product Details -->
+            <div class="modal fade" id="productModal" tabindex="-1">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Product Details</h5>
+                            <button class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body" id="modalBody">
+                            <!-- Product details will be loaded here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="footer-cta">
+      <div class="cta-box">
+        <div>
+          <small>Need Custom Solutions?</small>
+          <h3>Contact our experts for customized pool equipment solutions.</h3>
+        </div>
+        <button>Contact Us</button>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-content">
+        <h4>Subscribe To Our Newsletter</h4>
+        <p>Be the first to know about new arrivals and offers</p>
+        <div class="newsletter">
+          <input type="email" placeholder="Enter your email">
+          <button>Subscribe</button>
+        </div>
+        <span class="brand">WIBI</span>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
