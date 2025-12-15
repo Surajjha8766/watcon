@@ -408,6 +408,9 @@ body {
   object-fit: cover;
 }
 
+.our-catalogue{
+    display: flex;
+}
 /* TEXT + IMAGE SECTIONS */
 .text-image-section, .client-section {
   padding: 80px 0;
@@ -675,6 +678,10 @@ body {
 }
 
 @media (max-width: 768px) {
+
+    .our-catalogue{
+        display: block;
+    }
   .mobile-menu-btn { display: block; }
   .nav-links {
     display: none;
